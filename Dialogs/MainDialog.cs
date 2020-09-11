@@ -41,7 +41,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                new OAuthPromptSettings
                {
                    ConnectionName = ConnectionName,
-                   Text = "Please Sign In",
+                   Text = "Please Sign In to the Azure AD",
                    Title = "Sign In",
                    Timeout = 300000, // User has 5 minutes to login (1000 * 60 * 5)
                 }));
