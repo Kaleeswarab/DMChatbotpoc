@@ -11,7 +11,7 @@ namespace CoreBot.Translation
     public class GenerateAuthToken
     {
       
-        static string url = "https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issueToken";
+        static string url = "https://luischatbotintegration.cognitiveservices.azure.com/sts/v1.0/issueToken";
         private Uri ServiceUrl = new Uri(url);
 
          private const string OcpApimSubscriptionKeyHeader = "Ocp-Apim-Subscription-Key";

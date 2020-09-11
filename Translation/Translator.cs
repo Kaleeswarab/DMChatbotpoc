@@ -14,7 +14,7 @@ namespace CoreBot.Translation
         string GlobalToken = "";
         public readonly string subscriptionKey;// = "dff6db994ae74d32aeb4e62e6a937002";
         public readonly string translatorUri;// = "https://api.microsofttranslator.com/v2/Http.svc/";
-        public readonly string cognitiveServicesTokenUri;// = "https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issueToken";
+        public readonly string cognitiveServicesTokenUri;// = "https://luischatbotintegration.cognitiveservices.azure.com/sts/v1.0/issueToken";
 
        public Translator(IConfiguration configuration)
         {
