@@ -45,7 +45,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
             //       Title = "Sign In",
             //       Timeout = 300000, // User has 5 minutes to login (1000 * 60 * 5)
             //    }));
-            AddDialog(new ConfirmPrompt(nameof(ConfirmPrompt)));
+            //AddDialog(new ConfirmPrompt(nameof(ConfirmPrompt)));
 
             AddDialog(new TextPrompt(nameof(TextPrompt)));
             AddDialog(newsDialog);
@@ -54,7 +54,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
             AddDialog(genericDialog);
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), new WaterfallStep[]
            {
-                 PromptStepAsync,
+                PromptStepAsync,
                  //LoginStepAsync,
                 //  IntroStepAsync,
                  ActStepAsync,
