@@ -36,15 +36,15 @@ namespace Microsoft.BotBuilderSamples.Dialogs
           _luisRecognizer = luisRecognizer;
             Logger = logger;
             _translator = translator;
-            AddDialog(new OAuthPrompt(
-               nameof(OAuthPrompt),
-               new OAuthPromptSettings
-               {
-                   ConnectionName = ConnectionName,
-                   Text = "Please Sign In to the Azure AD",
-                   Title = "Sign In",
-                   Timeout = 300000, // User has 5 minutes to login (1000 * 60 * 5)
-                }));
+            //AddDialog(new OAuthPrompt(
+            //   nameof(OAuthPrompt),
+            //   new OAuthPromptSettings
+            //   {
+            //       ConnectionName = ConnectionName,
+            //       Text = "Please Sign In to the Azure AD",
+            //       Title = "Sign In",
+            //       Timeout = 300000, // User has 5 minutes to login (1000 * 60 * 5)
+            //    }));
             AddDialog(new ConfirmPrompt(nameof(ConfirmPrompt)));
 
             AddDialog(new TextPrompt(nameof(TextPrompt)));
@@ -55,7 +55,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), new WaterfallStep[]
            {
                  PromptStepAsync,
-                 LoginStepAsync,
+                 //LoginStepAsync,
                 //  IntroStepAsync,
                  ActStepAsync,
                  FinalStepAsync
